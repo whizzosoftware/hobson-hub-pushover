@@ -24,7 +24,7 @@ public class PushoverActionProvider extends ActionProvider {
     private PushoverPlugin plugin;
 
     public PushoverActionProvider(PushoverPlugin plugin) {
-        super(PropertyContainerClassContext.create(plugin.getContext(), "sms"), "Send Pushover message", "Send a message to Pushover", true, 2000);
+        super(PropertyContainerClassContext.create(plugin.getContext(), "sendMessage"), "Send Pushover message", "Send a message to Pushover", true, 2000);
 
         this.plugin = plugin;
 
